@@ -110,7 +110,7 @@ export function fetchComments(id) {
 
 ## 修改
 
-最常见的操作就是：你本地模拟了了一些数据，待后端完成接口后，逐步替换掉原先 mock 的接口。
+最常见的操作就是：你本地模拟了一些数据，待后端完成接口后，逐步替换掉原先 mock 的接口。
 
 我们以[src/api/role.js](https://github.com/PanJiaChen/vue-element-admin/blob/master/src/api/role.js)中的`getRoles`接口为例。它原本是在[mock/role/index.js](https://github.com/PanJiaChen/vue-element-admin/blob/master/mock/role/index.js)中 mock 的数据。现在我们需要将它切换为真实后端数据，只要在[mock/role/index.js](https://github.com/PanJiaChen/vue-element-admin/blob/master/mock/role/index.js)找到对应的路由，之后将它删除即可。这时候你可以在`network`中，查看到真实的数据。
 
